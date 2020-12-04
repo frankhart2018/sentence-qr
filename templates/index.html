@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sentence/Link to QR</title>
+    </head>
+
+    <body>
+        <div>
+            <p>
+                <textarea id="sentence" style="width: 50%; height: 100px;" placeholder="Enter your sentence or link"></textarea>
+            </p>
+            <p>
+                <input type="button" id="generate-qr" value="Generate">
+            </p>
+        </div>
+
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/generate-qr-api.js') }}"></script>
+    </body>
+</html>
